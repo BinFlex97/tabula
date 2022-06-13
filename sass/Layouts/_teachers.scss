@@ -1,0 +1,46 @@
+.teachers {
+    @include styleBackground(100%,100%,url(../../img/Wave_White_bottom_right_shape_01.png));
+    background-color: $color-bg-1;
+    background-position: bottom;
+    .teachers-content {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 40px;
+        padding: 35px;
+        .teachers-item {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 300ms ease-in-out;
+            @include styleTitle(0.75rem, 1.55rem, 1rem);
+            @include styleBackground(inherit, inherit, $color-light);
+            .teachers-picture {
+                width: 100%;
+                height: 50%;
+                overflow: hidden;
+                img {
+                    transition: all 700ms ease-in-out;
+                    width: 100%;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .teachers-text {
+                text-align: center;
+                margin: 35px 35px;
+            }
+            &:hover {
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+            }
+        }
+        .teachers-bg {
+            z-index: -1;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

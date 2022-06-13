@@ -1,0 +1,19 @@
+.carousel {
+    @include styleBackground(100%, 100%, url(../../img/Violet_top_left_wave.png));
+    background-position: bottom;
+    .carou-bg1 {
+        position: absolute;
+        top: 0;
+        @include styleBackground(100%, 100%, url(../../img/yellow_top_wave_01.png));
+    }
+    .carou-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        @include styleBackground(100%, 700px, $color-pure);
+        .carou-left {
+            @include styleTitle($fs-2, $fs-3, 1rem);
+        }
+    }
+}

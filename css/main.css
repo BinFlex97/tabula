@@ -1,0 +1,318 @@
+.buttonPurple {
+  padding: 1.1em 1.5em;
+  border-radius: 80px;
+  border: 1px solid #b21980;
+  background-color: #b21980;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  transition: all 500ms ease;
+  overflow: hidden;
+}
+
+.buttonPurple:hover {
+  padding: 1.1em 1.5em;
+  border-radius: 80px;
+  border: 1px solid #b21980;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 13px;
+  font-weight: 600;
+  color: #b21980;
+}
+
+.input-group {
+  margin: 0 10px;
+}
+
+.input-group .form-control {
+  position: relative;
+  font-size: 13px;
+  font-weight: 300;
+  color: #191919;
+  border: none;
+  border: 1px solid #dcd1f3;
+  border-radius: 50px;
+  height: 50px;
+  padding-left: 50px;
+  transition: all 700ms;
+}
+
+.input-group .form-control:focus {
+  border: 1px solid black;
+  box-shadow: none;
+  padding-left: 50px;
+  background-color: transparent;
+}
+
+.input-group i {
+  position: absolute;
+  top: 17px;
+  left: 6%;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #b21980;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1349px;
+  margin: auto;
+}
+
+header .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: inherit;
+  background: rgba(255, 255, 255, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  max-width: 1349px;
+}
+
+header .navbar .navbar-brand {
+  padding: 0;
+}
+
+header .navbar .navbar-brand img {
+  width: 80px;
+}
+
+header .navbar .navbar-collapse {
+  flex-grow: unset;
+}
+
+header .navbar .navbar-collapse .navbar-nav li a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #191919;
+  padding: 0 50px 0 0;
+  transition: all 0.3 ease;
+}
+
+header .navbar .navbar-collapse .navbar-nav li a:hover {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b21980;
+}
+
+header .navbar .navbar-collapse .navbar-info {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .navbar-collapse .navbar-info a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #191919;
+  margin-left: 1em;
+}
+
+header .navbar .navbar-collapse .navbar-info a:hover {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b21980;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  background: url(../../img/Violet_top_left_wave.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.carousel .carou-bg1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../img/yellow_top_wave_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.carousel .carou-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: rgba(255, 255, 255, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.carousel .carou-content .carou-left h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b21980;
+}
+
+.carousel .carou-content .carou-left h2 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.carousel .carou-content .carou-left p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #191919;
+}
+
+.teachers {
+  width: 100%;
+  height: 100%;
+  background: url(../../img/Wave_White_bottom_right_shape_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #dcd1f3;
+  background-position: bottom;
+}
+
+.teachers .teachers-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 40px;
+  padding: 35px;
+}
+
+.teachers .teachers-content .teachers-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  width: inherit;
+  height: inherit;
+  background: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.teachers .teachers-content .teachers-item h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b21980;
+}
+
+.teachers .teachers-content .teachers-item h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.teachers .teachers-content .teachers-item p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #191919;
+}
+
+.teachers .teachers-content .teachers-item .teachers-picture {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.teachers .teachers-content .teachers-item .teachers-picture img {
+  transition: all 700ms ease-in-out;
+  width: 100%;
+}
+
+.teachers .teachers-content .teachers-item .teachers-picture img:hover {
+  transform: scale(1.1);
+}
+
+.teachers .teachers-content .teachers-item .teachers-text {
+  text-align: center;
+  margin: 35px 35px;
+}
+
+.teachers .teachers-content .teachers-item:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.teachers .teachers-content .teachers-bg {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+}
+
+.course {
+  width: 100%;
+  height: 100%;
+  background: url(../../img/accent_bottom_wave_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.course .course-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course .course-content .course-right {
+  background-color: white;
+  width: 40%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.236);
+  height: 560px;
+}
+
+.course .course-content .course-right h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b21980;
+}
+
+.course .course-content .course-right h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.course .course-content .course-right p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #191919;
+}
+
+.course .course-content .course-right form {
+  margin: auto;
+  width: 90%;
+}
+
+.course .course-content .course-right form h2 {
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.course .course-content .course-right form .form-group {
+  display: flex;
+  padding: 5px 0;
+}
+
+.course .course-content .course-right form .form-group textarea {
+  height: 100px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */

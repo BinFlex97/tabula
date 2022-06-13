@@ -1,0 +1,25 @@
+.input-group {
+    margin: 0 10px;
+    .form-control{
+        position: relative;
+        @include styleText($fs-1, $fw-3, $color-dark);
+        border: none;
+        border: 1px solid $color-bg-1;
+        border-radius: 50px;
+        height: 50px;
+        padding-left: 50px;
+        transition: all 700ms;
+        &:focus {
+            border: 1px solid black;
+            box-shadow: none;
+            padding-left: 50px;
+            background-color: transparent;
+        }
+    }
+    i {
+        position: absolute;
+        top: 17px;
+        left: 6%;
+        @include styleText($fs-2, $fw-3, $color-purple);
+    }
+}

@@ -1,0 +1,11 @@
+
+.buttonPurple {
+    @include styleBtn($pd-y-1, $pd-x-1, 80px,$color-purple, $color-purple);
+    @include styleText($fs-1, $fw-6, $color-light);
+    transition: all 500ms ease;
+    overflow: hidden;
+    &:hover{
+        @include styleBtn($pd-y-1, $pd-x-1, 80px,$color-purple, $color-pure);
+        @include styleText($fs-1, $fw-6, $color-purple);
+    }
+}

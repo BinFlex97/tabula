@@ -1,0 +1,29 @@
+@mixin styleText($fs,$fw,$color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin styleBtn($pd-y,$pd-x,$radius,$bd,$bg){
+    padding: $pd-y $pd-x;
+    border-radius: $radius;
+    border: 1px solid $bd;
+    background-color: $bg;
+}
+@mixin styleBackground ($W,$H,$bg) {
+    width: $W;
+    height: $H;
+    background: $bg;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+@mixin styleTitle($fs1,$fs2,$fs3) {
+    h4{
+        @include styleText($fs1,$fw-6,$color-purple);
+    }
+    h2{
+        @include styleText($fs2,$fw-7,$color-dark);
+    }
+    p{
+        @include styleText($fs3,$fw-5,$color-dark);
+    }
+}
